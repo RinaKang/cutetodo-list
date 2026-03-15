@@ -1,0 +1,119 @@
+.title_wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFEDB;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.title_name {
+    font-size: 50px;
+    margin: 0;        /* 기존 margin 10% 제거 */
+}
+
+.star1 {
+    position: relative;   /* absolute → relative */
+    transform: rotate(-20deg);
+}
+
+.star2 {
+    position: relative;   /* absolute → relative */
+    transform: rotate(5deg);
+}
+
+.star1::before {                
+    content: '★';                
+    color: #88FFF3;                
+    font-size: 100px;  
+    -webkit-text-stroke: 2px black;              
+}
+.star2::before {                
+    content: '★';                
+    color: #562C2A;                
+    font-size: 100px;                
+    -webkit-text-stroke: 2px black;              
+}
+
+.todolist{
+    margin: 40px auto;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 16px;
+    background: #fff;
+    display: block;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.input_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* 입력창과 버튼 사이 간격 */
+}
+
+#todoInput {
+    width: 400px;
+    height: 40px;
+    margin: 20px 0;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+
+#addBtn {
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    color: black;
+    background-color:rgb(255, 254, 243);
+    cursor: pointer;
+}
+
+#myElement {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between; /* 왼쪽 정렬 */
+    padding: 12px 0 12px 10px;   /* 왼쪽 패딩 최소화 */
+    margin-right: auto;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    color: #333;
+    list-style: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+    gap: 10px; /* 요소 간 간격 */
+}
+
+/* 취소선 효과를 위한 클래스 */
+.line-through {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    background: #ffdede;
+    border: solid 1px #000000;
+    border-radius: 6px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.delete-button:hover {
+    background: #ffbcdb;
+    color: #fff;
+}
