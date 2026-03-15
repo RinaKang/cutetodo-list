@@ -1,6 +1,6 @@
 # ⭐ Cute To-Do List
 
-![todo-list](todo-list.png)
+![screenshot](todo-list.png)
 
 심플 귀여운 투두리스트 간단 프로젝트
 
